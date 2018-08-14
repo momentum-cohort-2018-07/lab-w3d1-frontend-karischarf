@@ -36,6 +36,12 @@ function assignmentScore (grades, studentName, assignmentNum) {
 // 3. Create a function called assignmentAverageScore that takes a grades
 // object and an assignment number and returns the average score for that assignment.
 
+function assignmentAverageScore(grades, assignmentNum) {
+    let total= grades.reduce(assignmentScores(grades, assignmentNum)) 
+    return total/grades.length
+    
+}
+
 // 4. Create a function called studentAverages that takes a grades object
 // and returns a new object of students and their average score, like this:
 // { indiana: 90, nevada: 80, indigo: 83, ... }
